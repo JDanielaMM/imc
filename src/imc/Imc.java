@@ -18,7 +18,7 @@ public class Imc {
     public static void main(String[] args) {
        double e = metodo("Introduce tu estatura: ");
        double p = metodo("Introduce tu peso: ");
-       double imc = p/(e*e);
+       double imc = p/(Math.pow(e, 2));
        JOptionPane.showMessageDialog(null,"Tu imc es de: "+ imc);
     }
     
