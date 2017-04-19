@@ -19,7 +19,18 @@ public class Imc {
        double e = metodo("Introduce tu estatura: ");
        double p = metodo("Introduce tu peso: ");
        double imc = p/(Math.pow(e, 2));
-       JOptionPane.showMessageDialog(null,"Tu imc es de: "+ imc);
+       if (imc<18.5){
+           JOptionPane.showMessageDialog(null,"Tu imc es de: "+ imc+" Tienes un peso bajo");
+           
+       }
+       if ((imc>=18.5) &(imc<25)){
+           JOptionPane.showMessageDialog(null,"Tu imc es de: "+ imc+" Tienes un peso normal");
+           
+       }
+       if (imc>=25){
+           JOptionPane.showMessageDialog(null,"Tu imc es de: "+ imc+" Tienes sobrepeso");
+           
+       }
     }
     
     public static double metodo (String men){
